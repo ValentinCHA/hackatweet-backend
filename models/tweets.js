@@ -2,11 +2,10 @@ const mongoose = require('mongoose');
 
 const tweetSchema = mongoose.Schema({
     date: Date,
-    name : String,
-    tweetName: String,
-    title : String,
+    username: String,
+    firstname : String,
+    token : String,
     content: String,
-    canDelete: String,
 });
 
 const Tweet = mongoose.model('tweets', tweetSchema);
